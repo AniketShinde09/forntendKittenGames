@@ -1,0 +1,208 @@
+
+.dashboard-body {
+  background: #def26f;
+  height: 100vh;
+  background-size: cover;
+  
+}
+
+.dashboard-box {
+  display: flex;
+  position: relative;
+  flex-shrink: 1;
+  
+}
+
+.dashboard-box-1-body {
+  width: 70%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.dashboard-box-2-body {
+  width: 30%;
+  border: 3px solid #e70c8f;
+  height: 650px;
+  margin-right: 20px;
+  margin-top:50px
+
+}
+
+.dashboard-box-1-content-1 {
+  margin: 20px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.dashboard-box-1-content-2 {
+  margin: 20px;
+  height: 75%;
+}
+
+.game-start-button {
+  --c: #0dc726; 
+
+  box-shadow: 0 0 0 0.1em inset var(--c);
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p, 0%)) 0%,
+    var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+  outline-offset: 0.1em;
+  transition: background-size 0.4s, background-position 0s 0.4s;
+  font-family: system-ui, sans-serif;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 0.2em 1em;
+  font-weight: bold;
+  border: none;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.game-start-button:active {
+  box-shadow: 0 0 9e9Q inset #0009;
+  background-color: var(--c);
+  color: #fff;
+}
+
+.game-start-button:hover {
+  --_p: 100%;
+  transition: background-position 0.4s, background-size 0s;
+  color: white;
+  box-shadow: 0 0 0 0.1em inset var(--c);
+}
+
+.rule-texts {
+  font-size: 25px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+ul {
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+li {
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.game-rules {
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.game-title{
+  font-size: 40px;
+  margin-left: 40px;
+  font-weight: bold;
+  color: rgb(16, 71, 225);
+  margin-bottom: 10px;
+  height: 70px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.score{
+  font-size: 30px;
+  color: rgb(238, 24, 209);
+  border-radius: 10px;
+}
+
+.leaderboard-status{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 30px;
+  background-color: rgb(150, 207, 207);
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+
+.leaderboard-title{
+  margin: 10px 0px 30px 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bold;
+  color:rgb(89, 11, 244);
+}
+
+.leaderboard-status-name{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 30px;
+  font-weight: 600
+
+}
+
+.leaderboard-status-points{
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  font-size: 30px;
+  font-weight: 600
+}
+
+.leaderboard-status-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashboard-exit-game {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 150px;
+  height: 55px;
+  font-size: 20px;
+  --c: #e22d2d; 
+
+  box-shadow: 0 0 0 0.1em inset var(--c);
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p, 0%)) 0%,
+    var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+  outline-offset: 0.1em;
+  transition: background-size 0.4s, background-position 0s 0.4s;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  padding: 0.4em 1.3em;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+}
+
+.dashboard-exit-game:hover {
+  --_p: 100%;
+  transition: background-position 0.4s, background-size 0s;
+  color: white;
+}
+
+.dashboard-exit-game:active {
+  box-shadow: 0 0 9e9Q inset #0009;
+  background-color: var(--c);
+  color: #fff;
+}
